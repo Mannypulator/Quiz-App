@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" media="screen and (min-height:500px)" href="css/mobile.css">
+
+  <title>Quiz Game || Game Over</title>
+</head>
+<body>
+  <div class="container">
+    <div class="game-over flex-center flex-column">
+      <h1>Game Over!!</h1>
+      <h1 class="finalScore"> 0 </h1>
+      <form>
+        <input type="text" id="playerName" name="playerName" placeholder="Player Name">
+        <button class="btn saveScore" type="submit" onclick="saveHighScore(event)" disabled>Save</button>
+      </form>
+            <a class="btn text-center" href="questions.html">Play Again</a>
+            <a class="btn" href="index.html">Home</a>
+            </div>
+    </div>
+  <script src="js/game_over.js"></script>
+</body>
+</html>
