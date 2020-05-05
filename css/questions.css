@@ -1,8 +1,4 @@
-:root {
-  --primary-color: #565aeb;
-  --secondary-color: rgba(86, 185, 235, 0.5);
-  font-size: 10px;
-}
+
 
 .option-container {
   display: flex;
@@ -11,7 +7,8 @@
   font-size: 1.8rem;
   border: 1px solid var(--secondary-color);
   border-radius: 10px;
-  background: #fff;
+  background: #f4f4f4;
+  color: #333;
 }
 
 .option-container:hover {
@@ -29,6 +26,7 @@
 .option-text {
   padding: 1.8rem;
   width: 100%;
+  color: #333;
 }
 
 /* Heads Up Display */
@@ -39,6 +37,7 @@
 .heads-up-prefix {
   text-align: center;
   font-size: 3rem;
+  color: #fff;
 }
 .heads-up-main-text {
   text-align: center;
