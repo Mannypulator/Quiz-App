@@ -71,7 +71,7 @@ function getNewQuestions() {
   if(availableQuestions.length === 0 ||questionCounter >= MAX_QUESTIONS){
     localStorage.setItem("totalScore",score);
     // Go to the game over page
-    return window.location.assign('/game_over.html'); 
+    return window.location.assign('game_over.html'); 
   }
   questionCounter++;
   questionCounterText.innerText = `${questionCounter}/${MAX_QUESTIONS}`;
