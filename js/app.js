@@ -3,6 +3,7 @@ const options = Array.from(document.getElementsByClassName("option-text"));
 const questionCounterText = document.querySelector('.questionCounter');
 const scoreText = document.querySelector(".score");
 const nextBtn  = document.querySelector('.nextBtn');
+const finalScore = document.querySelector('.finalScore');
 
 let currentQuestion = {}
 let acceptingAnswers = false;
@@ -12,36 +13,51 @@ let availableQuestions = [];
 
 let questions = [
   {
-    q: "Inside which HTML element do we put the JavaScript??",
-    option1: "<script>",
-    option2: "<javascript>",
-    option3: "<js>",
-    option4: "<scripting>",
+    q: "How to check if git is available on your system?",
+    option1: "git --version",
+    option2: "git version",
+    option3: "git --v",
+    option4: "None of the above",
     answer: 1
   },
   {
-    q:
-      "What is the correct syntax for referring to an external script called 'xxx.js'?",
-    option1: "<script href='xxx.js'>",
-    option2: "<script name='xxx.js'>",
-    option3: "<script src='xxx.js'>",
-    option4: "<script file='xxx.js'>",
+    q:"How to add a file to staging area?",
+    option1: "git add .",
+    option2: "git add file",
+    option3: "git add . file",
+    option4: "All of the above",
+    answer: 2
+  },
+  {
+    q: " How to initialize a new Git repository?",
+    option1: "git inIt",
+    option2: "git --init",
+    option3: "git init project",
+    option4: "None of the above",
+    answer: 4
+  },
+  {
+    q: " How to remove a file from staging area?",
+    option1: "git reset",
+    option2: "git reset HEAD",
+    option3: "git reset HEAD --file",
+    option4: "All of the above",
     answer: 3
   },
   {
-    q: " How do you write 'Hello World' in an alert box?",
-    option1: "msgBox('Hello World');",
-    option2: "alertBox('Hello World');",
-    option3: "msg('Hello World');",
-    option4: "alert('Hello World');",
-    answer: 4
+    q: "How to make a commit?",
+    option1: "git commit -m 'initial commit'",
+    option2: "git commit 'initial commit'",
+    option3: "git init commit",
+    option4: "None of the above",
+    answer: 1
   }
 ];
 
 
 // Constants
 const ANSWER_POINTS = 20;
-const MAX_QUESTIONS = 3;
+const MAX_QUESTIONS = 5;
 
 function startGame() {
   questionCounter = 0;
@@ -53,7 +69,7 @@ function startGame() {
 function getNewQuestions() {
   //If it has used up all the questions, Game over
   if(availableQuestions.length === 0 ||questionCounter >= MAX_QUESTIONS){
-    localStorage.setItem('mostRecentScore',score);
+    localStorage.setItem("totalScore",score);
     // Go to the game over page
     return window.location.assign('/game_over.html'); 
   }
