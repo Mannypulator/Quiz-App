@@ -124,8 +124,12 @@ function calculateScore(currentScore){
 }
 
 nextBtn.addEventListener('click',function(e){
-  getNewQuestions();
-  e.preventDefault();
+  if(!acceptingAnswers) {
+      getNewQuestions();
+      e.preventDefault();
+  }
+  alert('Please select an option!');
+
 })
 
 startGame();
