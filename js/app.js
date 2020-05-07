@@ -109,7 +109,7 @@ options.forEach(function(option){
 
     selectedChoice.parentElement.classList.add(classToApply);
   
-    setTimeout(function showWrongAnswer(){
+    setTimeout(function(){
       selectedChoice.parentElement.classList.remove(classToApply);
       getNewQuestions();
     },1000);

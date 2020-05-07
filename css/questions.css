@@ -5,7 +5,7 @@
   margin-bottom: 0.5rem;
   width: 100%;
   font-size: 1.8rem;
-  border: 1px solid var(--secondary-color);
+  border: 0.3rem solid var(--primary-color);
   border-radius: 10px;
   background: #f4f4f4;
   color: #333;
@@ -26,7 +26,6 @@
 .option-text {
   padding: 1.8rem;
   width: 100%;
-  color: #333;
 }
 
 /* Heads Up Display */
@@ -44,8 +43,10 @@
 }
 .correct {
   background-color: #28a745;
+  color: #fff;
 }
 
 .incorrect {
   background-color: #dc3545;
+  color: #fff;
 }

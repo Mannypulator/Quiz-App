@@ -38,6 +38,9 @@ h1 span {
   font-size: 2rem;
   font-weight: 500;
 }
+h1 span.final-score {
+  font-size: 3rem;
+}
 h2 {
   font-size: 4rem;
   color:var(--primary-color);
@@ -94,9 +97,9 @@ h3 {
 }
 .btn:hover {
   cursor: pointer;
-  box-shadow: 0 0.4rem 1.4rem 0 var(--secondary-color);
+  box-shadow: 0 0.4rem 1.4rem 0 var(--primary-color);
   transform: translate(-0.1rem);
-  transition: transform 150ms ease-in-out;
+  transition: transform 200ms ease-in-out;
 }
 
 
